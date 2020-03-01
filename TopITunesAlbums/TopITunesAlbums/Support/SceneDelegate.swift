@@ -19,8 +19,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
+        window?.rootViewController = getRootNC()
         window?.makeKeyAndVisible()
+    }
+    
+    private func getRootNC() -> UINavigationController {
+        let topList = TopListVC()
+        topList.title = "The top 100 albums"
+        return UINavigationController(rootViewController: topList)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

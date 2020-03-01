@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A31AB3B8240C1D23008EA798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3B7240C1D23008EA798 /* AppDelegate.swift */; };
 		A31AB3BA240C1D23008EA798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3B9240C1D23008EA798 /* SceneDelegate.swift */; };
-		A31AB3BC240C1D23008EA798 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3BB240C1D23008EA798 /* ViewController.swift */; };
+		A31AB3BC240C1D23008EA798 /* TopListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3BB240C1D23008EA798 /* TopListVC.swift */; };
 		A31AB3C1240C1D24008EA798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31AB3C0240C1D24008EA798 /* Assets.xcassets */; };
 		A31AB3C4240C1D24008EA798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31AB3C2240C1D24008EA798 /* LaunchScreen.storyboard */; };
 		A31AB3CF240C1D24008EA798 /* TopITunesAlbumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3CE240C1D24008EA798 /* TopITunesAlbumsTests.swift */; };
@@ -29,7 +29,7 @@
 		A31AB3B4240C1D23008EA798 /* TopITunesAlbums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopITunesAlbums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31AB3B7240C1D23008EA798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A31AB3B9240C1D23008EA798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A31AB3BB240C1D23008EA798 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A31AB3BB240C1D23008EA798 /* TopListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListVC.swift; sourceTree = "<group>"; };
 		A31AB3C0240C1D24008EA798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A31AB3C3240C1D24008EA798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A31AB3C5240C1D24008EA798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,11 +77,8 @@
 		A31AB3B6240C1D23008EA798 /* TopITunesAlbums */ = {
 			isa = PBXGroup;
 			children = (
-				A31AB3B7240C1D23008EA798 /* AppDelegate.swift */,
-				A31AB3B9240C1D23008EA798 /* SceneDelegate.swift */,
-				A31AB3BB240C1D23008EA798 /* ViewController.swift */,
-				A31AB3C0240C1D24008EA798 /* Assets.xcassets */,
-				A31AB3C2240C1D24008EA798 /* LaunchScreen.storyboard */,
+				A31AB3DA240C3A3E008EA798 /* Support */,
+				A31AB3D9240C2C7E008EA798 /* ViewControllers */,
 				A31AB3C5240C1D24008EA798 /* Info.plist */,
 			);
 			path = TopITunesAlbums;
@@ -94,6 +91,25 @@
 				A31AB3D0240C1D24008EA798 /* Info.plist */,
 			);
 			path = TopITunesAlbumsTests;
+			sourceTree = "<group>";
+		};
+		A31AB3D9240C2C7E008EA798 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A31AB3BB240C1D23008EA798 /* TopListVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A31AB3DA240C3A3E008EA798 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A31AB3B7240C1D23008EA798 /* AppDelegate.swift */,
+				A31AB3C0240C1D24008EA798 /* Assets.xcassets */,
+				A31AB3C2240C1D24008EA798 /* LaunchScreen.storyboard */,
+				A31AB3B9240C1D23008EA798 /* SceneDelegate.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A31AB3BC240C1D23008EA798 /* ViewController.swift in Sources */,
+				A31AB3BC240C1D23008EA798 /* TopListVC.swift in Sources */,
 				A31AB3B8240C1D23008EA798 /* AppDelegate.swift in Sources */,
 				A31AB3BA240C1D23008EA798 /* SceneDelegate.swift in Sources */,
 			);
