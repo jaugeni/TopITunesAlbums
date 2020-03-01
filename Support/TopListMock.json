@@ -1,0 +1,284 @@
+{
+    "feed": {
+        "title": "Top Albums",
+        "id": "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/10/non-explicit.json",
+        "author": {
+            "name": "iTunes Store",
+            "uri": "http://wwww.apple.com/us/itunes/"
+        },
+        "links": [
+            {
+                "self": "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/10/non-explicit.json"
+            },
+            {
+                "alternate": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?genreId=34&popId=82&app=music"
+            }
+        ],
+        "copyright": "Copyright © 2018 Apple Inc. Все права защищены.",
+        "country": "us",
+        "icon": "http://itunes.apple.com/favicon.ico",
+        "updated": "2020-02-28T03:58:44.000-08:00",
+        "results": [
+            {
+                "artistName": "Justin Bieber",
+                "id": "1496639180",
+                "releaseDate": "2020-02-14",
+                "name": "Changes",
+                "kind": "album",
+                "copyright": "℗ 2020 Def Jam Recordings, a division of UMG Recordings, Inc.",
+                "artistId": "320569549",
+                "artistUrl": "https://music.apple.com/us/artist/justin-bieber/320569549?app=music",
+                "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/49/c1/04/49c10497-421b-5480-0e88-2b1b9c7b038c/20UMGIM03126.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "14",
+                        "name": "Pop",
+                        "url": "https://itunes.apple.com/us/genre/id14"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/changes/1496639180?app=music"
+            },
+            {
+                "artistName": "Lil Baby",
+                "id": "1499567361",
+                "releaseDate": "2020-02-28",
+                "name": "My Turn",
+                "kind": "album",
+                "copyright": "Quality Control Music/Motown Records; ℗ 2020 Quality Control Music, LLC, under exclusive license to UMG Recordings, Inc.",
+                "artistId": "1276656483",
+                "artistUrl": "https://music.apple.com/us/artist/lil-baby/1276656483?app=music",
+                "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/ec/d9/88/ecd988fa-cd08-4414-a81c-538041368907/20UMGIM04592.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "18",
+                        "name": "Hip-Hop/Rap",
+                        "url": "https://itunes.apple.com/us/genre/id18"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/my-turn/1499567361?app=music"
+            },
+            {
+                "artistName": "BTS",
+                "id": "1499290546",
+                "releaseDate": "2020-02-21",
+                "name": "MAP OF THE SOUL : 7",
+                "kind": "album",
+                "copyright": "℗ 2020 Bighit Entertainment",
+                "artistId": "883131348",
+                "artistUrl": "https://music.apple.com/us/artist/bts/883131348?app=music",
+                "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/92/5f/58/925f5872-1365-2bae-12d9-face15cb97b5/195081034713.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "51",
+                        "name": "K-Pop",
+                        "url": "https://itunes.apple.com/us/genre/id51"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "14",
+                        "name": "Pop",
+                        "url": "https://itunes.apple.com/us/genre/id14"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/map-of-the-soul-7/1499290546?app=music"
+            },
+            {
+                "artistName": "Harry Styles",
+                "id": "1485802965",
+                "releaseDate": "2019-12-13",
+                "name": "Fine Line",
+                "kind": "album",
+                "copyright": "℗ 2019 Erskine Records Limited, under exclusive license to Columbia Records, a Division of Sony Music Entertainment",
+                "artistId": "471260289",
+                "artistUrl": "https://music.apple.com/us/artist/harry-styles/471260289?app=music",
+                "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/72/89/85/728985d1-9484-7b71-1ea8-0f0654f7dc16/886448022213.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "14",
+                        "name": "Pop",
+                        "url": "https://itunes.apple.com/us/genre/id14"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/fine-line/1485802965?app=music"
+            },
+            {
+                "artistName": "G Herbo",
+                "id": "1499718754",
+                "releaseDate": "2020-02-28",
+                "name": "PTSD",
+                "kind": "album",
+                "copyright": "℗ 2020 Machine Entertainment Group LLC/Epic Records",
+                "artistId": "1036753321",
+                "artistUrl": "https://music.apple.com/us/artist/g-herbo/1036753321?app=music",
+                "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music114/v4/97/8d/2f/978d2f71-c544-fc55-03f9-49fd48f76a65/850013391240.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "1076",
+                        "name": "Rap",
+                        "url": "https://itunes.apple.com/us/genre/id1076"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "18",
+                        "name": "Hip-Hop/Rap",
+                        "url": "https://itunes.apple.com/us/genre/id18"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/ptsd/1499718754?app=music"
+            },
+            {
+                "artistName": "Various Artists",
+                "id": "1487738280",
+                "releaseDate": "2019-11-15",
+                "name": "Frozen 2 (Original Motion Picture Soundtrack / Deluxe Edition)",
+                "kind": "album",
+                "copyright": "℗ 2019 Walt Disney Records",
+                "artistId": "36270",
+                "artistUrl": "https://music.apple.com/us/artist/various-artists/36270?app=music",
+                "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/5d/ea/6d/5dea6db2-aa20-7775-0309-7a6a8fe0be88/19UM1IM00155.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "16",
+                        "name": "Soundtrack",
+                        "url": "https://itunes.apple.com/us/genre/id16"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/frozen-2-original-motion-picture-soundtrack-deluxe/1487738280?app=music"
+            },
+            {
+                "artistName": "Tame Impala",
+                "id": "1497230760",
+                "releaseDate": "2020-02-14",
+                "name": "The Slow Rush",
+                "kind": "album",
+                "copyright": "An Island Records Australia release; ℗ 2020 Modular Recordings Pty Ltd",
+                "artistId": "290242959",
+                "artistUrl": "https://music.apple.com/us/artist/tame-impala/290242959?app=music",
+                "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music113/v4/76/59/7e/76597e3f-906b-66e8-5319-40f64128cb6b/19UMGIM96748.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "20",
+                        "name": "Alternative",
+                        "url": "https://itunes.apple.com/us/genre/id20"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/the-slow-rush/1497230760?app=music"
+            },
+            {
+                "artistName": "Luke Combs",
+                "id": "1479453822",
+                "releaseDate": "2019-11-08",
+                "name": "What You See Is What You Get",
+                "kind": "album",
+                "copyright": "℗ 2019 River House Artists LLC, under exclusive license to Sony Music Entertainment. All rights reserved.",
+                "artistId": "815635315",
+                "artistUrl": "https://music.apple.com/us/artist/luke-combs/815635315?app=music",
+                "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music123/v4/ce/e8/eb/cee8eb1d-5359-033f-a095-85301ab8ef8b/886447949191.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "6",
+                        "name": "Country",
+                        "url": "https://itunes.apple.com/us/genre/id6"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/what-you-see-is-what-you-get/1479453822?app=music"
+            },
+            {
+                "artistName": "Billie Eilish",
+                "id": "1450695723",
+                "releaseDate": "2019-03-29",
+                "name": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+                "kind": "album",
+                "copyright": "℗ 2019 Darkroom/Interscope Records",
+                "artistId": "1065981054",
+                "artistUrl": "https://music.apple.com/us/artist/billie-eilish/1065981054?app=music",
+                "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music124/v4/a7/31/24/a731244c-e065-2f44-63a2-d15b6b27fefa/00602577427657.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "20",
+                        "name": "Alternative",
+                        "url": "https://itunes.apple.com/us/genre/id20"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    },
+                    {
+                        "genreId": "7",
+                        "name": "Electronic",
+                        "url": "https://itunes.apple.com/us/genre/id7"
+                    },
+                    {
+                        "genreId": "21",
+                        "name": "Rock",
+                        "url": "https://itunes.apple.com/us/genre/id21"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/when-we-all-fall-asleep-where-do-we-go/1450695723?app=music"
+            },
+            {
+                "artistName": "The Weeknd",
+                "id": "1499385848",
+                "releaseDate": "2020-03-20",
+                "name": "After Hours",
+                "kind": "album",
+                "copyright": "℗ 2020 The Weeknd XO, Inc., manufactured and marketed by Republic Records, a division of UMG Recordings, Inc.",
+                "artistId": "479756766",
+                "artistUrl": "https://music.apple.com/us/artist/the-weeknd/479756766?app=music",
+                "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/48/8e/f8/488ef857-e038-ddda-91dc-ade280127889/20UMGIM11048.rgb.jpg/200x200bb.png",
+                "genres": [
+                    {
+                        "genreId": "15",
+                        "name": "R&B/Soul",
+                        "url": "https://itunes.apple.com/us/genre/id15"
+                    },
+                    {
+                        "genreId": "34",
+                        "name": "Music",
+                        "url": "https://itunes.apple.com/us/genre/id34"
+                    }
+                ],
+                "url": "https://music.apple.com/us/album/after-hours/1499385848?app=music"
+            }
+        ]
+    }
+}

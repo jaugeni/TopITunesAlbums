@@ -13,6 +13,10 @@
 		A31AB3C1240C1D24008EA798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31AB3C0240C1D24008EA798 /* Assets.xcassets */; };
 		A31AB3C4240C1D24008EA798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31AB3C2240C1D24008EA798 /* LaunchScreen.storyboard */; };
 		A31AB3CF240C1D24008EA798 /* TopITunesAlbumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3CE240C1D24008EA798 /* TopITunesAlbumsTests.swift */; };
+		A31AB3DF240C3C8E008EA798 /* TopListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3DE240C3C8E008EA798 /* TopListCell.swift */; };
+		A31AB3E4240C3E7E008EA798 /* TopListMock.json in Resources */ = {isa = PBXBuildFile; fileRef = A31AB3E3240C3E7E008EA798 /* TopListMock.json */; };
+		A31AB3E8240C46C3008EA798 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3E7240C46C3008EA798 /* TitleLabel.swift */; };
+		A31AB3EA240C478F008EA798 /* SubTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3E9240C478F008EA798 /* SubTitleLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		A31AB3CA240C1D24008EA798 /* TopITunesAlbumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopITunesAlbumsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31AB3CE240C1D24008EA798 /* TopITunesAlbumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopITunesAlbumsTests.swift; sourceTree = "<group>"; };
 		A31AB3D0240C1D24008EA798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A31AB3DE240C3C8E008EA798 /* TopListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListCell.swift; sourceTree = "<group>"; };
+		A31AB3E3240C3E7E008EA798 /* TopListMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = TopListMock.json; path = ../../../Support/TopListMock.json; sourceTree = "<group>"; };
+		A31AB3E7240C46C3008EA798 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		A31AB3E9240C478F008EA798 /* SubTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +85,11 @@
 		A31AB3B6240C1D23008EA798 /* TopITunesAlbums */ = {
 			isa = PBXGroup;
 			children = (
+				A31AB3DB240C3C07008EA798 /* CustomViews */,
+				A31AB3C5240C1D24008EA798 /* Info.plist */,
+				A31AB3E2240C3D3C008EA798 /* MockData */,
 				A31AB3DA240C3A3E008EA798 /* Support */,
 				A31AB3D9240C2C7E008EA798 /* ViewControllers */,
-				A31AB3C5240C1D24008EA798 /* Info.plist */,
 			);
 			path = TopITunesAlbums;
 			sourceTree = "<group>";
@@ -110,6 +120,40 @@
 				A31AB3B9240C1D23008EA798 /* SceneDelegate.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		A31AB3DB240C3C07008EA798 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				A31AB3E6240C4658008EA798 /* Labels */,
+				A31AB3DC240C3C32008EA798 /* Cells */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		A31AB3DC240C3C32008EA798 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A31AB3DE240C3C8E008EA798 /* TopListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A31AB3E2240C3D3C008EA798 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				A31AB3E3240C3E7E008EA798 /* TopListMock.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		A31AB3E6240C4658008EA798 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				A31AB3E7240C46C3008EA798 /* TitleLabel.swift */,
+				A31AB3E9240C478F008EA798 /* SubTitleLabel.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A31AB3C4240C1D24008EA798 /* LaunchScreen.storyboard in Resources */,
+				A31AB3E4240C3E7E008EA798 /* TopListMock.json in Resources */,
 				A31AB3C1240C1D24008EA798 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,9 +257,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31AB3EA240C478F008EA798 /* SubTitleLabel.swift in Sources */,
 				A31AB3BC240C1D23008EA798 /* TopListVC.swift in Sources */,
 				A31AB3B8240C1D23008EA798 /* AppDelegate.swift in Sources */,
 				A31AB3BA240C1D23008EA798 /* SceneDelegate.swift in Sources */,
+				A31AB3E8240C46C3008EA798 /* TitleLabel.swift in Sources */,
+				A31AB3DF240C3C8E008EA798 /* TopListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
