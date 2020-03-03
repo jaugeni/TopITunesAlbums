@@ -26,7 +26,6 @@ class SubTitleLabel: UILabel {
     
     private func configure() {
         textColor = .secondaryLabel
-        adjustsFontSizeToFitWidth = true
         translatesAutoresizingMaskIntoConstraints = false
     }
 

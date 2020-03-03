@@ -12,6 +12,7 @@ class TopListVC: UIViewController {
     
     let tableView = UITableView()
     var albums = [Int]()
+    var models: [AlbumModel]?
     
     //MARK: - VC life cycle functions
     override func viewDidLoad() {
@@ -23,6 +24,18 @@ class TopListVC: UIViewController {
         }
         
         configureTableView()
+        
+        NetworkManager().getAlbums { [weak self] result in
+            switch result {
+            case .success(let albums):
+                DispatchQueue.main.async {
+                    self?.models = albums
+                    self?.tableView.reloadData()
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
     //MARK: - UI setup
@@ -35,7 +48,7 @@ class TopListVC: UIViewController {
         view.addSubview(tableView)
         
         tableView.frame = view.bounds
-        tableView.rowHeight = UITableView.automaticDimension
+        tableView.rowHeight = 56
         tableView.separatorInset = .zero
         tableView.delegate = self
         tableView.dataSource = self
@@ -63,8 +76,8 @@ extension TopListVC: UITableViewDataSource {
         guard let topCell = tableView.dequeueReusableCell(withIdentifier: TopListCell.reuseID, for: indexPath) as? TopListCell else {
             return UITableViewCell()
         }
-        
-        topCell.set(album: indexPath.row)
+        guard let album = models?[indexPath.row] else { return UITableViewCell() }
+        topCell.set(album: album)
         
         return topCell
     }

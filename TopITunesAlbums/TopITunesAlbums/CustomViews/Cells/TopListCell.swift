@@ -11,13 +11,17 @@ import UIKit
 class TopListCell: UITableViewCell {
     
     static let reuseID = "TopListCell"
-    let titleLable = TitleLabel(textAlignment: .left, fontSize: 16)
-    let subTitleLable = SubTitleLabel(fontSize: 14)
-    let albumImage = UIView()
+    let titleLable = TitleLabel(textAlignment: .left, fontSize: 14)
+    let subTitleLable = SubTitleLabel(fontSize: 12)
+    let albumImageView = UIImageView()
+    let vStackView = UIStackView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        vStackView.addArrangedSubview(titleLable)
+        vStackView.addArrangedSubview(subTitleLable)
+        contentView.addSubview(albumImageView)
+        contentView.addSubview(vStackView)
         configure()
     }
     
@@ -25,42 +29,43 @@ class TopListCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func set(album: Int) {
-        titleLable.text = "Album number \(album)"
-        subTitleLable.text = "Artist name \(album)"
+    func set(album: AlbumModel) {
+        titleLable.text = album.name
+        subTitleLable.text = album.artistName
     }
     
     private func configure() {
-        
-        albumImage.backgroundColor = .red
-        albumImage.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(albumImage)
-        
-        let vStackView = UIStackView()
+        configureImageView()
+        configureVStackView()
+        configureConstrains()
+    }
+    
+    func configureImageView() {
+        albumImageView.layer.cornerRadius = 5
+        albumImageView.clipsToBounds = true
+        albumImageView.backgroundColor = .red
+        albumImageView.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    func configureVStackView() {
         vStackView.axis = .vertical
-        vStackView.distribution = .fill
+        vStackView.distribution = .fillProportionally
         vStackView.alignment = .leading
-        vStackView.spacing = 0
         vStackView.translatesAutoresizingMaskIntoConstraints = false
-        
-        vStackView.addArrangedSubview(titleLable)
-        vStackView.addArrangedSubview(subTitleLable)
-        contentView.addSubview(vStackView)
-        
-        let marginGuide = contentView.layoutMarginsGuide
+    }
+    
+    func configureConstrains() {
         
         NSLayoutConstraint.activate([
             
-            albumImage.heightAnchor.constraint(equalToConstant: 40),
-            albumImage.widthAnchor.constraint(equalToConstant: 40),
-            albumImage.topAnchor.constraint(equalTo: marginGuide.topAnchor, constant: 0),
-            albumImage.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor, constant: 0),
-            albumImage.bottomAnchor.constraint(equalTo: marginGuide.bottomAnchor, constant: 0),
+            albumImageView.heightAnchor.constraint(equalToConstant: 40),
+            albumImageView.widthAnchor.constraint(equalToConstant: 40),
+            albumImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            albumImageView.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0),
             
-            vStackView.leadingAnchor.constraint(equalTo: albumImage.trailingAnchor, constant: 16),
-            vStackView.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor, constant: 0),
-            vStackView.topAnchor.constraint(equalTo: marginGuide.topAnchor, constant: 0),
+            vStackView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            vStackView.leadingAnchor.constraint(equalTo: albumImageView.trailingAnchor, constant: 16),
+            vStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
         ])
     }
-
 }

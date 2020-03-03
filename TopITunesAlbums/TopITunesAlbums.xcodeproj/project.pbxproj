@@ -17,6 +17,9 @@
 		A31AB3E4240C3E7E008EA798 /* TopListMock.json in Resources */ = {isa = PBXBuildFile; fileRef = A31AB3E3240C3E7E008EA798 /* TopListMock.json */; };
 		A31AB3E8240C46C3008EA798 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3E7240C46C3008EA798 /* TitleLabel.swift */; };
 		A31AB3EA240C478F008EA798 /* SubTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3E9240C478F008EA798 /* SubTitleLabel.swift */; };
+		A31AB3ED240C799D008EA798 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3EC240C799D008EA798 /* AlbumModel.swift */; };
+		A3BE3AD9240C811E00A3025B /* AlbumsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE3AD8240C811E00A3025B /* AlbumsModel.swift */; };
+		A3BE3ADC240C83BC00A3025B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE3ADB240C83BC00A3025B /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		A31AB3E3240C3E7E008EA798 /* TopListMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = TopListMock.json; path = ../../../Support/TopListMock.json; sourceTree = "<group>"; };
 		A31AB3E7240C46C3008EA798 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		A31AB3E9240C478F008EA798 /* SubTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleLabel.swift; sourceTree = "<group>"; };
+		A31AB3EC240C799D008EA798 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		A3BE3AD8240C811E00A3025B /* AlbumsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsModel.swift; sourceTree = "<group>"; };
+		A3BE3ADB240C83BC00A3025B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +92,12 @@
 			isa = PBXGroup;
 			children = (
 				A31AB3DB240C3C07008EA798 /* CustomViews */,
-				A31AB3C5240C1D24008EA798 /* Info.plist */,
+				A3BE3ADA240C838100A3025B /* Managers */,
 				A31AB3E2240C3D3C008EA798 /* MockData */,
+				A31AB3EB240C78C3008EA798 /* Models */,
 				A31AB3DA240C3A3E008EA798 /* Support */,
 				A31AB3D9240C2C7E008EA798 /* ViewControllers */,
+				A31AB3C5240C1D24008EA798 /* Info.plist */,
 			);
 			path = TopITunesAlbums;
 			sourceTree = "<group>";
@@ -154,6 +162,23 @@
 				A31AB3E9240C478F008EA798 /* SubTitleLabel.swift */,
 			);
 			path = Labels;
+			sourceTree = "<group>";
+		};
+		A31AB3EB240C78C3008EA798 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A31AB3EC240C799D008EA798 /* AlbumModel.swift */,
+				A3BE3AD8240C811E00A3025B /* AlbumsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3BE3ADA240C838100A3025B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A3BE3ADB240C83BC00A3025B /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3BE3ADC240C83BC00A3025B /* NetworkManager.swift in Sources */,
+				A31AB3ED240C799D008EA798 /* AlbumModel.swift in Sources */,
+				A3BE3AD9240C811E00A3025B /* AlbumsModel.swift in Sources */,
 				A31AB3EA240C478F008EA798 /* SubTitleLabel.swift in Sources */,
 				A31AB3BC240C1D23008EA798 /* TopListVC.swift in Sources */,
 				A31AB3B8240C1D23008EA798 /* AppDelegate.swift in Sources */,
