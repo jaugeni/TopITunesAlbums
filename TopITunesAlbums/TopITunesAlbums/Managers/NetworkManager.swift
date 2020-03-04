@@ -6,7 +6,7 @@
 //  Copyright © 2020 YAUHENI IVANIUK. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum NetworkError: Error {
     case badURL
@@ -14,10 +14,11 @@ enum NetworkError: Error {
     case invalidData
 }
 
-
 class NetworkManager {
     
     private let url = "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/100/non-explicit.json"
+    
+    private let cache = NSCache<NSString, UIImage>()
     
     func getAlbums(completion: @escaping (Result<[AlbumModel], NetworkError>) -> Void) {
         
@@ -52,6 +53,35 @@ class NetworkManager {
             } catch {
                 completion(.failure(.invalidData))
             }
+        }
+        
+        task.resume()
+    }
+    
+    func downloadImage(from urlStr: String, completion: @escaping (UIImage?) -> Void){
+        
+        let cacheKey = NSString(string: urlStr)
+        
+        if let image = cache.object(forKey: cacheKey) {
+            completion(image)
+            return
+        }
+        
+        guard let url = URL(string: urlStr) else {
+            completion(nil)
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
+            guard error == nil,
+                let response = response as? HTTPURLResponse, response.statusCode == 200, let data = data,
+                let image = UIImage(data: data) else {
+                    completion(nil)
+                    return
+            }
+            
+            self?.cache.setObject(image, forKey: cacheKey)
+            completion(image)
         }
         
         task.resume()

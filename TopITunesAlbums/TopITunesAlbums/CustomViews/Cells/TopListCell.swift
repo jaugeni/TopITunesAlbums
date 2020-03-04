@@ -13,7 +13,7 @@ class TopListCell: UITableViewCell {
     static let reuseID = "TopListCell"
     let titleLable = TitleLabel(textAlignment: .left, fontSize: 14)
     let subTitleLable = SubTitleLabel(fontSize: 12)
-    let albumImageView = UIImageView()
+    let albumImageView = AlbumImaggeView(frame: .zero)
     let vStackView = UIStackView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -29,22 +29,17 @@ class TopListCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func set(album: AlbumModel) {
+    func set(album: AlbumModel, with viewModel: TopListViewModel) {
         titleLable.text = album.name
         subTitleLable.text = album.artistName
+        viewModel.getImage(forr: album.artworkUrl100) { [weak self] image in
+            self?.albumImageView.image = image
+        }
     }
     
     private func configure() {
-        configureImageView()
         configureVStackView()
         configureConstrains()
-    }
-    
-    func configureImageView() {
-        albumImageView.layer.cornerRadius = 5
-        albumImageView.clipsToBounds = true
-        albumImageView.backgroundColor = .red
-        albumImageView.translatesAutoresizingMaskIntoConstraints = false
     }
     
     func configureVStackView() {

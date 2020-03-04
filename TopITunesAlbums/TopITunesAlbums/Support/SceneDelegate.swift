@@ -24,7 +24,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func getRootNC() -> UINavigationController {
-        let topList = TopListVC()
+        let topListViewModel = TopListViewModel()
+        
+        let topList = TopListVC(with: topListViewModel)
         topList.title = "The top 100 albums"
         return UINavigationController(rootViewController: topList)
     }

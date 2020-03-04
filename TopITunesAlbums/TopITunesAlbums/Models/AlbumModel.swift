@@ -6,7 +6,7 @@
 //  Copyright © 2020 YAUHENI IVANIUK. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct AlbumModel: Codable {
     
