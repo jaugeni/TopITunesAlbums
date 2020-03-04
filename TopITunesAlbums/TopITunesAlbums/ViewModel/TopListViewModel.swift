@@ -13,6 +13,7 @@ class TopListViewModel {
     private var albumsModel: [AlbumModel] = []
     
     var albumsLoaded: (() -> Void)?
+    var errorAppear: ((String) -> Void)?
     
      var albumsCount: Int {
         return albumsModel.count
@@ -33,7 +34,9 @@ class TopListViewModel {
                     self?.albumsLoaded?()
                 }
             case .failure(let error):
-                print(error)
+                DispatchQueue.main.async {
+                    self?.errorAppear?(error.rawValue)
+                }
             }
         }
     }

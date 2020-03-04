@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A30AD473241033E100AC156A /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30AD472241033E100AC156A /* FilledButton.swift */; };
+		A30AD4752410458900AC156A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30AD4742410458900AC156A /* NetworkError.swift */; };
+		A30AD4782410470000AC156A /* UIViewController+AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30AD4772410470000AC156A /* UIViewController+AlertVC.swift */; };
 		A31AB3B8240C1D23008EA798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3B7240C1D23008EA798 /* AppDelegate.swift */; };
 		A31AB3BA240C1D23008EA798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3B9240C1D23008EA798 /* SceneDelegate.swift */; };
 		A31AB3BC240C1D23008EA798 /* TopListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3BB240C1D23008EA798 /* TopListVC.swift */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		A30AD472241033E100AC156A /* FilledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButton.swift; sourceTree = "<group>"; };
+		A30AD4742410458900AC156A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A30AD4772410470000AC156A /* UIViewController+AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AlertVC.swift"; sourceTree = "<group>"; };
 		A31AB3B4240C1D23008EA798 /* TopITunesAlbums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopITunesAlbums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31AB3B7240C1D23008EA798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A31AB3B9240C1D23008EA798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,14 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
+		A30AD4762410465600AC156A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A30AD4772410470000AC156A /* UIViewController+AlertVC.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		A31AB3AB240C1D23008EA798 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				A31AB3DB240C3C07008EA798 /* CustomViews */,
+				A30AD4762410465600AC156A /* Extension */,
 				A3BE3ADA240C838100A3025B /* Managers */,
 				A31AB3E2240C3D3C008EA798 /* MockData */,
 				A31AB3EB240C78C3008EA798 /* Models */,
@@ -218,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				A3BE3AE3240F440800A3025B /* Constants.swift */,
+				A30AD4742410458900AC156A /* NetworkError.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -347,9 +361,11 @@
 			files = (
 				A3BE3ADC240C83BC00A3025B /* NetworkManager.swift in Sources */,
 				A3BE3ADE240F376B00A3025B /* TopListViewModel.swift in Sources */,
+				A30AD4782410470000AC156A /* UIViewController+AlertVC.swift in Sources */,
 				A3BE3AEB240F696F00A3025B /* DetailsVC.swift in Sources */,
 				A30AD473241033E100AC156A /* FilledButton.swift in Sources */,
 				A31AB3ED240C799D008EA798 /* AlbumModel.swift in Sources */,
+				A30AD4752410458900AC156A /* NetworkError.swift in Sources */,
 				A3BE3AD9240C811E00A3025B /* AlbumsModel.swift in Sources */,
 				A31AB3EA240C478F008EA798 /* SubTitleLabel.swift in Sources */,
 				A3BE3AE1240F401500A3025B /* AlbumImageView.swift in Sources */,
