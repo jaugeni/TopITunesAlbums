@@ -28,7 +28,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let topList = TopListVC(with: topListViewModel)
         topList.title = "The top 100 albums"
-        return UINavigationController(rootViewController: topList)
+        
+        let navigationController = UINavigationController(rootViewController: topList)
+        navigationController.navigationBar.tintColor = .label
+        return navigationController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

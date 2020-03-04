@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30AD473241033E100AC156A /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30AD472241033E100AC156A /* FilledButton.swift */; };
 		A31AB3B8240C1D23008EA798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3B7240C1D23008EA798 /* AppDelegate.swift */; };
 		A31AB3BA240C1D23008EA798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3B9240C1D23008EA798 /* SceneDelegate.swift */; };
 		A31AB3BC240C1D23008EA798 /* TopListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3BB240C1D23008EA798 /* TopListVC.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A30AD472241033E100AC156A /* FilledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButton.swift; sourceTree = "<group>"; };
 		A31AB3B4240C1D23008EA798 /* TopITunesAlbums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopITunesAlbums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31AB3B7240C1D23008EA798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A31AB3B9240C1D23008EA798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A30AD4712410339200AC156A /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				A30AD472241033E100AC156A /* FilledButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		A31AB3AB240C1D23008EA798 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +156,7 @@
 		A31AB3DB240C3C07008EA798 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				A30AD4712410339200AC156A /* Button */,
 				A31AB3DC240C3C32008EA798 /* Cells */,
 				A3BE3ADF240F3FF300A3025B /* ImageViews */,
 				A31AB3E6240C4658008EA798 /* Labels */,
@@ -337,6 +348,7 @@
 				A3BE3ADC240C83BC00A3025B /* NetworkManager.swift in Sources */,
 				A3BE3ADE240F376B00A3025B /* TopListViewModel.swift in Sources */,
 				A3BE3AEB240F696F00A3025B /* DetailsVC.swift in Sources */,
+				A30AD473241033E100AC156A /* FilledButton.swift in Sources */,
 				A31AB3ED240C799D008EA798 /* AlbumModel.swift in Sources */,
 				A3BE3AD9240C811E00A3025B /* AlbumsModel.swift in Sources */,
 				A31AB3EA240C478F008EA798 /* SubTitleLabel.swift in Sources */,
@@ -499,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2GURVV2B3;
 				INFOPLIST_FILE = TopITunesAlbums/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -516,6 +529,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2GURVV2B3;
 				INFOPLIST_FILE = TopITunesAlbums/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

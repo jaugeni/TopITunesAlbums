@@ -19,6 +19,7 @@ class DetailsVC: UIViewController {
     private let artistNameLabel = SubTitleLabel(fontSize: 14)
     private let genreReliseLabel = SubTitleLabel(fontSize: 12)
     private let vStackView = UIStackView()
+    private let iTunseButton = FilledButton(backgroundColor: .systemIndigo, title: "Check it in iTunes.")
     
     //MARK: - VC life cycle functions
     init(with album: AlbumModel) {
@@ -40,6 +41,7 @@ class DetailsVC: UIViewController {
         configureArtistLabel()
         configureGenreReliseLabel()
         configureVStackView()
+        configureITunseButton()
     }
     
     //MARK: - UI setup
@@ -54,7 +56,7 @@ class DetailsVC: UIViewController {
         album.getImage { [weak self] image in
             self?.albumImageView.image = image
         }
-                
+        
         let size = view.bounds.width / 1.6
         
         NSLayoutConstraint.activate([
@@ -98,6 +100,7 @@ class DetailsVC: UIViewController {
         vStackView.addArrangedSubview(genreReliseLabel)
         view.addSubview(vStackView)
         
+        vStackView.spacing = 4
         vStackView.axis = .vertical
         vStackView.distribution = .fill
         vStackView.alignment = .leading
@@ -110,5 +113,26 @@ class DetailsVC: UIViewController {
         ])
     }
     
+    func configureITunseButton() {
+        view.addSubview(iTunseButton)
+        
+        iTunseButton.addTarget(self, action: #selector(navigateToAppStore), for: .touchUpInside)
+        
+        let padding: CGFloat = 20
+        
+        NSLayoutConstraint.activate([
+            iTunseButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -padding),
+            iTunseButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            iTunseButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            iTunseButton.heightAnchor.constraint(equalToConstant: 60)
+        ])
+    }
     
+    @objc func navigateToAppStore() {
+        
+        guard let url = URL(string: album.url) else {
+            return
+        }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
 }
