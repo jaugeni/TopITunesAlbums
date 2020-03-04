@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30AD473241033E100AC156A /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30AD472241033E100AC156A /* FilledButton.swift */; };
 		A31AB3B8240C1D23008EA798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3B7240C1D23008EA798 /* AppDelegate.swift */; };
 		A31AB3BA240C1D23008EA798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3B9240C1D23008EA798 /* SceneDelegate.swift */; };
 		A31AB3BC240C1D23008EA798 /* TopListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3BB240C1D23008EA798 /* TopListVC.swift */; };
@@ -21,8 +22,9 @@
 		A3BE3AD9240C811E00A3025B /* AlbumsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE3AD8240C811E00A3025B /* AlbumsModel.swift */; };
 		A3BE3ADC240C83BC00A3025B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE3ADB240C83BC00A3025B /* NetworkManager.swift */; };
 		A3BE3ADE240F376B00A3025B /* TopListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE3ADD240F376B00A3025B /* TopListViewModel.swift */; };
-		A3BE3AE1240F401500A3025B /* AlbumImaggeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE3AE0240F401500A3025B /* AlbumImaggeView.swift */; };
+		A3BE3AE1240F401500A3025B /* AlbumImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE3AE0240F401500A3025B /* AlbumImageView.swift */; };
 		A3BE3AE4240F440800A3025B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE3AE3240F440800A3025B /* Constants.swift */; };
+		A3BE3AEB240F696F00A3025B /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE3AEA240F696F00A3025B /* DetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A30AD472241033E100AC156A /* FilledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButton.swift; sourceTree = "<group>"; };
 		A31AB3B4240C1D23008EA798 /* TopITunesAlbums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopITunesAlbums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31AB3B7240C1D23008EA798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A31AB3B9240C1D23008EA798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,8 +57,9 @@
 		A3BE3AD8240C811E00A3025B /* AlbumsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsModel.swift; sourceTree = "<group>"; };
 		A3BE3ADB240C83BC00A3025B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A3BE3ADD240F376B00A3025B /* TopListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewModel.swift; sourceTree = "<group>"; };
-		A3BE3AE0240F401500A3025B /* AlbumImaggeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumImaggeView.swift; sourceTree = "<group>"; };
+		A3BE3AE0240F401500A3025B /* AlbumImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumImageView.swift; sourceTree = "<group>"; };
 		A3BE3AE3240F440800A3025B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A3BE3AEA240F696F00A3025B /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A30AD4712410339200AC156A /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				A30AD472241033E100AC156A /* FilledButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		A31AB3AB240C1D23008EA798 = {
 			isa = PBXGroup;
 			children = (
@@ -97,13 +109,14 @@
 		A31AB3B6240C1D23008EA798 /* TopITunesAlbums */ = {
 			isa = PBXGroup;
 			children = (
-				A3BE3AE2240F43E800A3025B /* Utilities */,
 				A31AB3DB240C3C07008EA798 /* CustomViews */,
 				A3BE3ADA240C838100A3025B /* Managers */,
 				A31AB3E2240C3D3C008EA798 /* MockData */,
 				A31AB3EB240C78C3008EA798 /* Models */,
 				A31AB3DA240C3A3E008EA798 /* Support */,
+				A3BE3AE2240F43E800A3025B /* Utilities */,
 				A31AB3D9240C2C7E008EA798 /* ViewControllers */,
+				A3BE3AE5240F585900A3025B /* ViewModel */,
 				A31AB3C5240C1D24008EA798 /* Info.plist */,
 			);
 			path = TopITunesAlbums;
@@ -112,6 +125,8 @@
 		A31AB3CD240C1D24008EA798 /* TopITunesAlbumsTests */ = {
 			isa = PBXGroup;
 			children = (
+				A3BE3AE7240F5D8700A3025B /* Managers */,
+				A3BE3AE6240F5D7600A3025B /* ViewModel */,
 				A31AB3CE240C1D24008EA798 /* TopITunesAlbumsTests.swift */,
 				A31AB3D0240C1D24008EA798 /* Info.plist */,
 			);
@@ -122,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				A31AB3BB240C1D23008EA798 /* TopListVC.swift */,
+				A3BE3AEA240F696F00A3025B /* DetailsVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -140,6 +156,7 @@
 		A31AB3DB240C3C07008EA798 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				A30AD4712410339200AC156A /* Button */,
 				A31AB3DC240C3C32008EA798 /* Cells */,
 				A3BE3ADF240F3FF300A3025B /* ImageViews */,
 				A31AB3E6240C4658008EA798 /* Labels */,
@@ -185,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				A3BE3ADB240C83BC00A3025B /* NetworkManager.swift */,
-				A3BE3ADD240F376B00A3025B /* TopListViewModel.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -193,7 +209,7 @@
 		A3BE3ADF240F3FF300A3025B /* ImageViews */ = {
 			isa = PBXGroup;
 			children = (
-				A3BE3AE0240F401500A3025B /* AlbumImaggeView.swift */,
+				A3BE3AE0240F401500A3025B /* AlbumImageView.swift */,
 			);
 			path = ImageViews;
 			sourceTree = "<group>";
@@ -204,6 +220,28 @@
 				A3BE3AE3240F440800A3025B /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A3BE3AE5240F585900A3025B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3BE3ADD240F376B00A3025B /* TopListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A3BE3AE6240F5D7600A3025B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A3BE3AE7240F5D8700A3025B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,10 +347,12 @@
 			files = (
 				A3BE3ADC240C83BC00A3025B /* NetworkManager.swift in Sources */,
 				A3BE3ADE240F376B00A3025B /* TopListViewModel.swift in Sources */,
+				A3BE3AEB240F696F00A3025B /* DetailsVC.swift in Sources */,
+				A30AD473241033E100AC156A /* FilledButton.swift in Sources */,
 				A31AB3ED240C799D008EA798 /* AlbumModel.swift in Sources */,
 				A3BE3AD9240C811E00A3025B /* AlbumsModel.swift in Sources */,
 				A31AB3EA240C478F008EA798 /* SubTitleLabel.swift in Sources */,
-				A3BE3AE1240F401500A3025B /* AlbumImaggeView.swift in Sources */,
+				A3BE3AE1240F401500A3025B /* AlbumImageView.swift in Sources */,
 				A31AB3BC240C1D23008EA798 /* TopListVC.swift in Sources */,
 				A31AB3B8240C1D23008EA798 /* AppDelegate.swift in Sources */,
 				A31AB3BA240C1D23008EA798 /* SceneDelegate.swift in Sources */,
@@ -471,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2GURVV2B3;
 				INFOPLIST_FILE = TopITunesAlbums/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,6 +529,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2GURVV2B3;
 				INFOPLIST_FILE = TopITunesAlbums/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

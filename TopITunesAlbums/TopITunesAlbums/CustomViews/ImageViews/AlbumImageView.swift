@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AlbumImaggeView: UIImageView {
+class AlbumImageView: UIImageView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,6 +24,7 @@ class AlbumImaggeView: UIImageView {
         clipsToBounds = true
         backgroundColor = .systemGray6
         translatesAutoresizingMaskIntoConstraints = false
+        contentMode = .scaleAspectFit
         
         image = Images.placeholder
     }

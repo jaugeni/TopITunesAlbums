@@ -25,3 +25,19 @@ struct GenresModel: Codable {
     let name: String
     
 }
+
+extension AlbumModel {
+    
+    func getImage(completion: @escaping (UIImage?) -> Void) {
+        NetworkManager.share.downloadImage(from: artworkUrl100) { image in
+            DispatchQueue.main.async {
+                completion(image)
+            }
+        }
+    }
+    
+    var genre: String {
+        return genres[0].name
+    }
+}
+

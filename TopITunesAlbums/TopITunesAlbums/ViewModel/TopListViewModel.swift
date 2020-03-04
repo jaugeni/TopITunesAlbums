@@ -18,7 +18,7 @@ class TopListViewModel {
         return albumsModel.count
     }
     
-    private let networkManager = NetworkManager()
+    private let networkManager = NetworkManager.share
     
     init() {
         loadAlbums()
@@ -40,17 +40,5 @@ class TopListViewModel {
     
     func album(for indexPath: IndexPath) -> AlbumModel {
         return albumsModel[indexPath.row]
-    }
-    
-    func getImage(forr artworkUrl: String, completion: @escaping (UIImage?) -> Void) {
-        networkManager.downloadImage(from: artworkUrl) { (image) in
-            DispatchQueue.main.async {
-                if let image = image  {
-                    completion(image)
-                    return
-                }
-                completion(Images.placeholder)
-            }
-        }
     }
 }
