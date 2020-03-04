@@ -19,8 +19,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
+        window?.rootViewController = getRootNC()
         window?.makeKeyAndVisible()
+    }
+    
+    private func getRootNC() -> UINavigationController {
+        let topListViewModel = TopListViewModel()
+        
+        let topList = TopListVC(with: topListViewModel)
+        topList.title = "Top List"
+        
+        let navigationController = UINavigationController(rootViewController: topList)
+        navigationController.navigationBar.tintColor = .label
+        return navigationController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
