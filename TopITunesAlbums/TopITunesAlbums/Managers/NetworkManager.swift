@@ -16,6 +16,10 @@ enum NetworkError: Error {
 
 class NetworkManager {
     
+    static let share = NetworkManager()
+    
+    private init() {}
+    
     private let url = "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/100/non-explicit.json"
     
     private let cache = NSCache<NSString, UIImage>()

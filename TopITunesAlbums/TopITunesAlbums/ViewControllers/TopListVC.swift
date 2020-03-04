@@ -16,7 +16,6 @@ class TopListVC: UIViewController {
     //MARK: - VC life cycle functions
     init(with viewModel: TopListViewModel) {
         self.viewModel = viewModel
-        
         super.init(nibName: nil, bundle: nil)
         
         viewModel.albumsLoaded = { [weak self] in
@@ -31,7 +30,6 @@ class TopListVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
-        
         configureTableView()
     }
     
@@ -54,13 +52,6 @@ class TopListVC: UIViewController {
     }
 }
 
-//MARK: - UITableViewDelegate
-extension TopListVC: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-}
-
 //MARK: - UITableViewDataSource
 extension TopListVC: UITableViewDataSource {
     
@@ -74,10 +65,18 @@ extension TopListVC: UITableViewDataSource {
             return UITableViewCell()
         }
         
-        topCell.set(album: viewModel.album(for: indexPath), with: viewModel)
-        
+        topCell.set(album: viewModel.album(for: indexPath))
         return topCell
     }
     
+}
+
+//MARK: - UITableViewDelegate
+extension TopListVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = DetailsVC(with: viewModel.album(for: indexPath))
+        navigationController?.pushViewController(detailVC, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 

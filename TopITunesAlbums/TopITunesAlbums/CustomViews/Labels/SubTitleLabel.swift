@@ -26,6 +26,7 @@ class SubTitleLabel: UILabel {
     
     private func configure() {
         textColor = .secondaryLabel
+        lineBreakMode = .byWordWrapping
         translatesAutoresizingMaskIntoConstraints = false
     }
 

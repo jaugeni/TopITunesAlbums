@@ -11,38 +11,36 @@ import UIKit
 class TopListCell: UITableViewCell {
     
     static let reuseID = "TopListCell"
-    let titleLable = TitleLabel(textAlignment: .left, fontSize: 14)
-    let subTitleLable = SubTitleLabel(fontSize: 12)
-    let albumImageView = AlbumImaggeView(frame: .zero)
-    let vStackView = UIStackView()
+    private let titleLable = TitleLabel(textAlignment: .left, fontSize: 14)
+    private let subTitleLable = SubTitleLabel(fontSize: 12)
+    private let albumImageView = AlbumImageView(frame: .zero)
+    private let vStackView = UIStackView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        vStackView.addArrangedSubview(titleLable)
-        vStackView.addArrangedSubview(subTitleLable)
         contentView.addSubview(albumImageView)
-        contentView.addSubview(vStackView)
-        configure()
+        configureVStackView()
+        configureConstrains()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func set(album: AlbumModel, with viewModel: TopListViewModel) {
+    func set(album: AlbumModel) {
         titleLable.text = album.name
         subTitleLable.text = album.artistName
-        viewModel.getImage(forr: album.artworkUrl100) { [weak self] image in
+        
+        album.getImage { [weak self] image in
             self?.albumImageView.image = image
         }
     }
     
-    private func configure() {
-        configureVStackView()
-        configureConstrains()
-    }
-    
     func configureVStackView() {
+        vStackView.addArrangedSubview(titleLable)
+        vStackView.addArrangedSubview(subTitleLable)
+        contentView.addSubview(vStackView)
+        
         vStackView.axis = .vertical
         vStackView.distribution = .fillProportionally
         vStackView.alignment = .leading
