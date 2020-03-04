@@ -8,12 +8,6 @@
 
 import UIKit
 
-enum NetworkError: Error {
-    case badURL
-    case error
-    case invalidData
-}
-
 class NetworkManager {
     
     static let share = NetworkManager()
@@ -24,22 +18,21 @@ class NetworkManager {
     
     private let cache = NSCache<NSString, UIImage>()
     
-    func getAlbums(completion: @escaping (Result<[AlbumModel], NetworkError>) -> Void) {
+    func getAlbums(completion: @escaping (Result<[AlbumModel], ErrorMessages>) -> Void) {
         
         guard let url = URL(string: url) else {
-            completion(.failure(.badURL))
-            return
+            fatalError("wrong Url")
         }
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             
             if let _ = error {
-                completion(.failure(.error))
+                completion(.failure(.unableToComplete))
                 return
             }
             
             guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-                completion(.failure(.error))
+                completion(.failure(.invalidResponse))
                 return
             }
             

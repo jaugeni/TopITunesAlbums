@@ -21,6 +21,11 @@ class TopListVC: UIViewController {
         viewModel.albumsLoaded = { [weak self] in
             self?.tableView.reloadData()
         }
+        
+        viewModel.errorAppear = { [weak self] message in
+            self?.presentAlert(with: "", and: message)
+        }
+        
     }
     
     required init?(coder: NSCoder) {

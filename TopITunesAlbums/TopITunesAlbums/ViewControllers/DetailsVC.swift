@@ -19,7 +19,7 @@ class DetailsVC: UIViewController {
     private let artistNameLabel = SubTitleLabel(fontSize: 14)
     private let genreReliseLabel = SubTitleLabel(fontSize: 12)
     private let vStackView = UIStackView()
-    private let iTunseButton = FilledButton(backgroundColor: .systemIndigo, title: "Check it in iTunes.")
+    private let iTunseButton = FilledButton(backgroundColor: .systemIndigo, title: "Check it in Apple Music.")
     
     //MARK: - VC life cycle functions
     init(with album: AlbumModel) {
@@ -131,6 +131,7 @@ class DetailsVC: UIViewController {
     @objc func navigateToAppStore() {
         
         guard let url = URL(string: album.url) else {
+            presentAlert(with: ErrorMessages.wentWrong.rawValue, and: ErrorMessages.invalidLink.rawValue)
             return
         }
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
