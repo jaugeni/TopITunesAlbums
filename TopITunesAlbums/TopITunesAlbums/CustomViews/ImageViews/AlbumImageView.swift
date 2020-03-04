@@ -25,7 +25,6 @@ class AlbumImageView: UIImageView {
         backgroundColor = .systemGray6
         translatesAutoresizingMaskIntoConstraints = false
         contentMode = .scaleAspectFit
-        
         image = Images.placeholder
     }
 }

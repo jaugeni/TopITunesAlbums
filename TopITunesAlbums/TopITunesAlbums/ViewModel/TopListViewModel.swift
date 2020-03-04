@@ -10,7 +10,7 @@ import UIKit
 
 class TopListViewModel {
     
-    private var albumsModel: [AlbumModel] = []
+    var albumsModel: [AlbumModel] = []
     
     var albumsLoaded: (() -> Void)?
     var errorAppear: ((String) -> Void)?

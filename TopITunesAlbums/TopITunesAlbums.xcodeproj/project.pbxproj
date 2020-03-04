@@ -15,12 +15,12 @@
 		A31AB3BC240C1D23008EA798 /* TopListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3BB240C1D23008EA798 /* TopListVC.swift */; };
 		A31AB3C1240C1D24008EA798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31AB3C0240C1D24008EA798 /* Assets.xcassets */; };
 		A31AB3C4240C1D24008EA798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31AB3C2240C1D24008EA798 /* LaunchScreen.storyboard */; };
-		A31AB3CF240C1D24008EA798 /* TopITunesAlbumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3CE240C1D24008EA798 /* TopITunesAlbumsTests.swift */; };
 		A31AB3DF240C3C8E008EA798 /* TopListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3DE240C3C8E008EA798 /* TopListCell.swift */; };
 		A31AB3E4240C3E7E008EA798 /* TopListMock.json in Resources */ = {isa = PBXBuildFile; fileRef = A31AB3E3240C3E7E008EA798 /* TopListMock.json */; };
 		A31AB3E8240C46C3008EA798 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3E7240C46C3008EA798 /* TitleLabel.swift */; };
 		A31AB3EA240C478F008EA798 /* SubTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3E9240C478F008EA798 /* SubTitleLabel.swift */; };
 		A31AB3ED240C799D008EA798 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AB3EC240C799D008EA798 /* AlbumModel.swift */; };
+		A31BE5FB2410528300ADB627 /* TopListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BE5FA2410528300ADB627 /* TopListViewModelTests.swift */; };
 		A3BE3AD9240C811E00A3025B /* AlbumsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE3AD8240C811E00A3025B /* AlbumsModel.swift */; };
 		A3BE3ADC240C83BC00A3025B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE3ADB240C83BC00A3025B /* NetworkManager.swift */; };
 		A3BE3ADE240F376B00A3025B /* TopListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE3ADD240F376B00A3025B /* TopListViewModel.swift */; };
@@ -51,13 +51,13 @@
 		A31AB3C3240C1D24008EA798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A31AB3C5240C1D24008EA798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A31AB3CA240C1D24008EA798 /* TopITunesAlbumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopITunesAlbumsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A31AB3CE240C1D24008EA798 /* TopITunesAlbumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopITunesAlbumsTests.swift; sourceTree = "<group>"; };
 		A31AB3D0240C1D24008EA798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A31AB3DE240C3C8E008EA798 /* TopListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListCell.swift; sourceTree = "<group>"; };
 		A31AB3E3240C3E7E008EA798 /* TopListMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = TopListMock.json; path = ../../../Support/TopListMock.json; sourceTree = "<group>"; };
 		A31AB3E7240C46C3008EA798 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		A31AB3E9240C478F008EA798 /* SubTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleLabel.swift; sourceTree = "<group>"; };
 		A31AB3EC240C799D008EA798 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		A31BE5FA2410528300ADB627 /* TopListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewModelTests.swift; sourceTree = "<group>"; };
 		A3BE3AD8240C811E00A3025B /* AlbumsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsModel.swift; sourceTree = "<group>"; };
 		A3BE3ADB240C83BC00A3025B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A3BE3ADD240F376B00A3025B /* TopListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewModel.swift; sourceTree = "<group>"; };
@@ -140,7 +140,6 @@
 			children = (
 				A3BE3AE7240F5D8700A3025B /* Managers */,
 				A3BE3AE6240F5D7600A3025B /* ViewModel */,
-				A31AB3CE240C1D24008EA798 /* TopITunesAlbumsTests.swift */,
 				A31AB3D0240C1D24008EA798 /* Info.plist */,
 			);
 			path = TopITunesAlbumsTests;
@@ -159,9 +158,9 @@
 			isa = PBXGroup;
 			children = (
 				A31AB3B7240C1D23008EA798 /* AppDelegate.swift */,
+				A31AB3B9240C1D23008EA798 /* SceneDelegate.swift */,
 				A31AB3C0240C1D24008EA798 /* Assets.xcassets */,
 				A31AB3C2240C1D24008EA798 /* LaunchScreen.storyboard */,
-				A31AB3B9240C1D23008EA798 /* SceneDelegate.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -247,6 +246,7 @@
 		A3BE3AE6240F5D7600A3025B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A31BE5FA2410528300ADB627 /* TopListViewModelTests.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -311,6 +311,7 @@
 					};
 					A31AB3C9240C1D24008EA798 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 						TestTargetID = A31AB3B3240C1D23008EA798;
 					};
 				};
@@ -382,7 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A31AB3CF240C1D24008EA798 /* TopITunesAlbumsTests.swift in Sources */,
+				A31BE5FB2410528300ADB627 /* TopListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +564,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TopITunesAlbumsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -573,6 +575,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = club.ivani.TopITunesAlbumsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TopITunesAlbums.app/TopITunesAlbums";
@@ -584,6 +587,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TopITunesAlbumsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;

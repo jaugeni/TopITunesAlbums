@@ -12,6 +12,7 @@ class TopListVC: UIViewController {
     
     let tableView = UITableView()
     var viewModel: TopListViewModel
+    let loadingSpinner = UIActivityIndicatorView(style: .large)
     
     //MARK: - VC life cycle functions
     init(with viewModel: TopListViewModel) {
@@ -20,6 +21,8 @@ class TopListVC: UIViewController {
         
         viewModel.albumsLoaded = { [weak self] in
             self?.tableView.reloadData()
+            self?.loadingSpinner.removeFromSuperview()
+            self?.tableView.isHidden = false
         }
         
         viewModel.errorAppear = { [weak self] message in
@@ -38,6 +41,11 @@ class TopListVC: UIViewController {
         configureTableView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        configureActivityIndicator()
+    }
+    
     //MARK: - UI setup
     private func configureViewController() {
         view.backgroundColor = .systemBackground
@@ -54,6 +62,17 @@ class TopListVC: UIViewController {
         tableView.dataSource = self
         
         tableView.register(TopListCell.self, forCellReuseIdentifier: TopListCell.reuseID)
+    }
+    
+    func configureActivityIndicator() {
+        view.addSubview(loadingSpinner)
+        tableView.isHidden = true
+        loadingSpinner.translatesAutoresizingMaskIntoConstraints = false
+        loadingSpinner.hidesWhenStopped = true
+        loadingSpinner.translatesAutoresizingMaskIntoConstraints = true
+        loadingSpinner.startAnimating()
+
+        loadingSpinner.center = view.center
     }
 }
 

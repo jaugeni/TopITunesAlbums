@@ -39,5 +39,6 @@ extension AlbumModel {
     var genre: String {
         return genres[0].name
     }
+    
 }
 
