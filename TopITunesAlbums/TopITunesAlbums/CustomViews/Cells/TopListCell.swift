@@ -50,7 +50,6 @@ class TopListCell: UITableViewCell {
     func configureConstrains() {
         
         NSLayoutConstraint.activate([
-            
             albumImageView.heightAnchor.constraint(equalToConstant: 40),
             albumImageView.widthAnchor.constraint(equalToConstant: 40),
             albumImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),

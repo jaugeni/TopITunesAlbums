@@ -27,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let topListViewModel = TopListViewModel()
         
         let topList = TopListVC(with: topListViewModel)
-        topList.title = "The top 100 albums"
+        topList.title = "Top List"
         
         let navigationController = UINavigationController(rootViewController: topList)
         navigationController.navigationBar.tintColor = .label

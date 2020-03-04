@@ -15,6 +15,5 @@ extension UIViewController {
             self.dismiss(animated: true)
         }
         alertController.addAction(okAction)
-        
     }
 }
