@@ -39,10 +39,7 @@ class TopListVC: UIViewController {
         super.viewDidLoad()
         configureViewController()
         configureTableView()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        //Loading spinner fixed during interview 
         configureActivityIndicator()
     }
     
